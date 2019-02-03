@@ -1,29 +1,56 @@
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 960px) {
   .innnergrid, .gridcontainer {
-    grid-template-columns: 0px 230px 230px 230px 230px 0px;
+    grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
   }
 
   .topright {
     grid-column-start: 4;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .innergrid, .gridcontainer {
-    grid-template-columns: 0px 192px 192px 192px 192px 0px;
+    grid-template-columns: 1fr 164px 164px 164px 164px 1fr;
+  }
+
+  .itemcontainer {
+    max-width: 48%;
+    margin: 1%;
+  }
+
+  .topleft {
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 640px) {
   .innergrid, .gridcontainer {
-    grid-template-columns: 0px 160px 160px 160px 160px 0px;
+    grid-template-columns: 1fr 120px 120px 120px 120px 1fr;
   }
-}
-@media only screen and (max-width: 600px) {
-  .innergrid, .gridcontainer {
-    grid-template-columns: 0px 120px 120px 120px 120px 0px;
+
+  .innergrid {
+    position: static;
   }
 
   .itemcontainer {
     max-width: 100%;
+  }
+
+  .topleft {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    border-right: solid 1px #ddd;
+    border-left: solid 1px #ddd;
+  }
+
+  .topright {
+    grid-column: 2/6;
+    grid-row: 2/3;
+    border-right: solid 1px #ddd;
+    border-left: solid 1px #ddd;
+  }
+
+  .navbox {
+    justify-content: center;
   }
 }
 

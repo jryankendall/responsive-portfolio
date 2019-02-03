@@ -143,6 +143,7 @@
     width: 100%;
     text-align: center;
     color: whitesmoke;
+    z-index: 20;
 }
 
 /*.portfoliogrid {
@@ -200,3 +201,5 @@
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/* Media Queries are located in responsive.css for organization purposes. */
